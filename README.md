@@ -14,6 +14,8 @@ To start the application locally execute
 ./gradlew bootRun
 ```
 
-![example workflow](https://github.com/alex-vo/weather-service/workflows/build/badge.svg)
-[![Maintainability](https://api.codeclimate.com/v1/badges/14c4ba14ec880f6ea400/maintainability)](https://codeclimate.com/github/alex-vo/weather-service/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/14c4ba14ec880f6ea400/test_coverage)](https://codeclimate.com/github/alex-vo/weather-service/test_coverage)
+![example workflow](https://github.com/alex-vo/weather/workflows/build/badge.svg)
+
+[//]: # ([![Maintainability]&#40;https://api.codeclimate.com/v1/badges/14c4ba14ec880f6ea400/maintainability&#41;]&#40;https://codeclimate.com/github/alex-vo/weather-service/maintainability&#41;)
+
+[//]: # ([![Test Coverage]&#40;https://api.codeclimate.com/v1/badges/14c4ba14ec880f6ea400/test_coverage&#41;]&#40;https://codeclimate.com/github/alex-vo/weather-service/test_coverage&#41;)
