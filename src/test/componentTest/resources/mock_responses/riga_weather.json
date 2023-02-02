@@ -1,0 +1,41 @@
+{
+  "location": {
+    "name": "Riga",
+    "region": "Riga",
+    "country": "Latvia",
+    "lat": 56.95,
+    "lon": 24.1,
+    "tz_id": "Europe/Riga",
+    "localtime_epoch": 1675277556,
+    "localtime": "2023-02-01 20:52"
+  },
+  "current": {
+    "last_updated_epoch": 1675277100,
+    "last_updated": "2023-02-01 20:45",
+    "temp_c": 0.0,
+    "temp_f": 32.0,
+    "is_day": 0,
+    "condition": {
+      "text": "Light sleet showers",
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/362.png",
+      "code": 1249
+    },
+    "wind_mph": 4.3,
+    "wind_kph": 6.8,
+    "wind_degree": 320,
+    "wind_dir": "NW",
+    "pressure_mb": 994.0,
+    "pressure_in": 29.35,
+    "precip_mm": 0.4,
+    "precip_in": 0.02,
+    "humidity": 100,
+    "cloud": 100,
+    "feelslike_c": -4.6,
+    "feelslike_f": 23.7,
+    "vis_km": 6.0,
+    "vis_miles": 3.0,
+    "uv": 1.0,
+    "gust_mph": 14.5,
+    "gust_kph": 23.4
+  }
+}

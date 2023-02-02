@@ -1,0 +1,18 @@
+spring:
+  r2dbc:
+    url: r2dbc:h2:file:///./.db/data/weatherdb
+    username: sa
+    password:
+  liquibase:
+    url: jdbc:h2:file:./.db/data/weatherdb
+    user: sa
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+
+weatherapi:
+  key: 10dec016149e4d7f8b4125015232801 #tobe stored as secret
+  base-uri: http://api.weatherapi.com
+#  base-uri: http://localhost:1080
+
+ipapi:
+  base-uri: http://ip-api.com
+#  base-uri: http://localhost:1080

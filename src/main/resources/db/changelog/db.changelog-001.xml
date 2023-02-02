@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="1-weather-ipregion-tables" author="Aleksei Vorontsov">
+        <createTable tableName="IP_REGION">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="ip" type="varchar(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="region" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="looked_up_at_epoch" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <createTable tableName="WEATHER">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="ip_region_id" type="uuid">
+                <constraints nullable="false"/>
+            </column>
+            <column name="condition" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="temperature_celsius" type="decimal">
+                <constraints nullable="false"/>
+            </column>
+            <column name="wind_mph" type="decimal">
+                <constraints nullable="false"/>
+            </column>
+            <column name="wind_direction" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_updated_epoch" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="ip_region_id"
+                                 baseTableName="WEATHER"
+                                 constraintName="fk_weather_ip_region_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="IP_REGION"/>
+    </changeSet>
+
+</databaseChangeLog>
