@@ -16,6 +16,6 @@ To start the application locally execute
 
 ![example workflow](https://github.com/alex-vo/weather/workflows/build/badge.svg)
 
-[//]: # ([![Maintainability]&#40;https://api.codeclimate.com/v1/badges/14c4ba14ec880f6ea400/maintainability&#41;]&#40;https://codeclimate.com/github/alex-vo/weather-service/maintainability&#41;)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0444faf405c546139a39/maintainability)](https://codeclimate.com/github/alex-vo/weather/maintainability)
 
 [//]: # ([![Test Coverage]&#40;https://api.codeclimate.com/v1/badges/14c4ba14ec880f6ea400/test_coverage&#41;]&#40;https://codeclimate.com/github/alex-vo/weather-service/test_coverage&#41;)
